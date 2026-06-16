@@ -1,0 +1,4 @@
+*.s
+*.txt
+\!file3.txt
+!file3.txt
