@@ -1,0 +1,1 @@
+Basic Cleaning kata completed
