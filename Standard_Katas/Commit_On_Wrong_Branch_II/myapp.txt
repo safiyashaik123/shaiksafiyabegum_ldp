@@ -1,0 +1,8 @@
+Some code
+Some other line of code
+Another line of code
+<<<<<<< Updated upstream
+First part of new awesome feature
+=======
+Second part of new feature
+>>>>>>> Stashed changes
