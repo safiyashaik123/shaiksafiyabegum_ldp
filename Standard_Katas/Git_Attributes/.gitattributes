@@ -1,0 +1,3 @@
+*.txt text=auto eol=crlf working-tree-encoding=UTF-8
+*.bat text=auto eol=crlf
+*.png diff=useexif
