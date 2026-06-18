@@ -1,0 +1,4 @@
+module using library-1.2.4
+Promising feature X
+Use new library functionality
+Useful feature Y
