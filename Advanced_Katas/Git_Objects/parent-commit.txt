@@ -1,0 +1,6 @@
+tree 29c46dd09fe85a531ea75dcc2c73badd1c3e91e8
+parent 996a3bda33ddff3d8e3923035b0819eaa694f916
+author TidosDK <28749155+TidosDK@users.noreply.github.com> 1723039110 +0200
+committer Jan Krag <jankrag@gmail.com> 1730727514 +0100
+
+Fixed bug in bisect verify.sh

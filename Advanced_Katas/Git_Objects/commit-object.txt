@@ -1,0 +1,6 @@
+tree bac832e6166c3667c953bdc552ee683248ab62d7
+parent 88f4bcfe00d3d1f63c80938510107d2000c6af3a
+author Jan Krag <jan.krag@eficode.com> 1730724315 +0100
+committer Jan Krag <jankrag@gmail.com> 1730727514 +0100
+
+Use pre-setup & post-setup as suggested in review
