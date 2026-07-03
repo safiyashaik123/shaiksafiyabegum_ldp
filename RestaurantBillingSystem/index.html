@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Restaurant Billing System</h1>
+
+    <div class="container">
+
+        <div class="tables-section">
+
+            <h2>Tables</h2>
+
+            <input
+                type="text"
+                id="tableSearch"
+                placeholder="Search Table">
+
+            <div id="tablesContainer"></div>
+
+        </div>
+
+        <div class="menu-section">
+
+            <h2>Menu</h2>
+
+            <input
+                type="text"
+                id="menuSearch"
+                placeholder="Search Menu">
+
+            <div id="menuContainer"></div>
+
+        </div>
+
+    </div>
+    
+    <!-- Order Modal -->
+
+<div id="orderModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2>Order Details</h2>
+
+        <div id="orderContainer"></div>
+
+        <h3 id="grandTotal"></h3>
+
+        <button id="generateBill">
+
+            Generate Bill
+
+        </button>
+
+    </div>
+
+</div>
+<!-- Bill Modal -->
+
+<div id="billModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeBill">&times;</span>
+
+        <h2>Restaurant Bill</h2>
+
+        <div id="billContainer"></div>
+
+        <button id="printBill">
+
+            Print Bill
+
+        </button>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
