@@ -1,0 +1,15 @@
+"use strict";
+let studentName = "Safiya";
+let age = 22;
+let isPlaced = false;
+let worldPopulation = 8000000000n;
+let studentId = Symbol("ID");
+let manager = null;
+let middleName = undefined;
+console.log("Student Name :", studentName);
+console.log("Age          :", age);
+console.log("Placed       :", isPlaced);
+console.log("Population   :", worldPopulation);
+console.log("Student ID   :", studentId);
+console.log("Manager      :", manager);
+console.log("Middle Name  :", middleName);
