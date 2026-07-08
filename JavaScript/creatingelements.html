@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>Creating Elements in DOM</h1>
+
+<div id="container">
+    <p>Existing Paragraph</p>
+</div>
+
+<button onclick="createElements()">Click Me</button>
+
+<script>
+
+function createElements(){
+
+    let heading = document.createElement("h2");
+
+    let text = document.createTextNode("Welcome to JavaScript DOM");
+
+    heading.appendChild(text);
+
+    document.getElementById("container").appendChild(heading);
+
+    let para = document.createElement("p");
+
+    para.innerHTML = "This paragraph is created dynamically.";
+
+    document.getElementById("container").appendChild(para);
+
+}
+
+</script>
+
+</body>
+</html>

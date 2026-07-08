@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<button onclick="validate()">Submit</button>
+
+<p id="message"></p>
+
+<script>
+
+function validate(){
+
+    let username = document.getElementById("name").value;
+
+    if(username == ""){
+
+        document.getElementById("message").innerHTML =
+        "Name is required";
+
+    }
+    else{
+
+        document.getElementById("message").innerHTML =
+        "Form Submitted Successfully";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
