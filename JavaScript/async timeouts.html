@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="startTimer()">Start Timer</button>
+
+<button onclick="stopTimer()">Stop Timer</button>
+
+<script>
+
+let timeout;
+let interval;
+
+function startTimer(){
+
+    timeout = setTimeout(function(){
+
+        console.log("Executed Once");
+
+    },3000);
+
+    interval = setInterval(function(){
+
+        console.log("Running Every Second");
+
+    },1000);
+
+}
+
+function stopTimer(){
+
+    clearTimeout(timeout);
+
+    clearInterval(interval);
+
+    console.log("All Timers Stopped");
+
+}
+
+</script>
+
+</body>
+</html>

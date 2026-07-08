@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Animation</title>
+
+    <style>
+        #box{
+            width:100px;
+            height:100px;
+            background:red;
+            position:absolute;
+            left:0;
+            top:50px;
+            transition:0.5s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div id="box"></div>
+
+<br><br><br><br><br><br><br>
+
+<button onclick="moveBox()">Move</button>
+
+<script>
+
+function moveBox(){
+
+    document.getElementById("box").style.left = "200px";
+
+}
+
+</script>
+
+</body>
+</html>

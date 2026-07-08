@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="heading" onmouseover="changeColor()" onmouseout="resetColor()">
+Move Mouse Here
+</h2>
+
+<input type="text" onkeyup="typing()">
+
+<button onclick="clickButton()">Click Me</button>
+
+<script>
+
+function clickButton() {
+    alert("Button Clicked");
+}
+
+function changeColor() {
+    document.getElementById("heading").style.color = "red";
+}
+
+function resetColor() {
+    document.getElementById("heading").style.color = "black";
+}
+
+function typing() {
+    console.log("Typing...");
+}
+
+</script>
+
+</body>
+</html>

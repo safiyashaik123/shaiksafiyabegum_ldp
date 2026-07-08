@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Storage Example</title>
+</head>
+<body>
+
+<h2>Session Storage Example</h2>
+
+<button onclick="save()">Save Data</button>
+<button onclick="show()">Show Data</button>
+<button onclick="removeData()">Remove Data</button>
+
+<script>
+
+function save() {
+
+    sessionStorage.setItem("name", "Safiya");
+    sessionStorage.setItem("city", "Safiya");
+    sessionStorage.setItem("course", "Safiya");
+
+
+    console.log("Data Saved Successfully");
+
+}
+
+function show() {
+
+    let name = sessionStorage.getItem("name");
+
+    console.log("Stored Name:", name);
+
+}
+
+function removeData() {
+
+    sessionStorage.removeItem("name");
+
+    console.log("Data Removed Successfully");
+
+}
+
+</script>
+
+</body>
+</html>

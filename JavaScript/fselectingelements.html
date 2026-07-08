@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Welcome to JavaScript</h1>
+
+<p class="fruit">Apple</p>
+<p class="fruit">Banana</p>
+
+<h2>Learning DOM</h2>
+
+<button onclick="findElements()">Click Me</button>
+
+<script>
+
+function findElements() {
+
+    // 1. getElementById()
+    let element1 = document.getElementById("title");
+    console.log("getElementById():", element1.innerHTML);
+
+    // 2. getElementsByClassName()
+    let element2 = document.getElementsByClassName("fruit");
+    console.log("getElementsByClassName():", element2[0].innerHTML);
+    console.log("getElementsByClassName():", element2[1].innerHTML);
+
+    // 3. getElementsByTagName()
+    let element3 = document.getElementsByTagName("p");
+    console.log("getElementsByTagName():", element3[0].innerHTML);
+    console.log("getElementsByTagName():", element3[1].innerHTML);
+
+    // 4. querySelector()
+    let element4 = document.querySelector(".fruit");
+    console.log("querySelector():", element4.innerHTML);
+
+    // 5. querySelectorAll()
+    let element5 = document.querySelectorAll(".fruit");
+    console.log("querySelectorAll():", element5[0].innerHTML);
+    console.log("querySelectorAll():", element5[1].innerHTML);
+
+}
+
+</script>
+
+</body>
+</html>

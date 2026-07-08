@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Welcome</h1>
+
+<p id="message">JavaScript DOM</p>
+
+<a id="link" href="https://www.google.com">Google</a>
+
+<br><br>
+
+<input type="text" id="username" value="Safiya">
+
+<br><br>
+
+<button onclick="changeElements()">Click Me</button>
+
+<script>
+
+function changeElements(){
+
+    // 1. Change HTML
+    document.getElementById("title").innerHTML = "<i>Hello World</i>";
+
+    // 2. Change Text
+    document.getElementById("message").innerText = "Learning JavaScript";
+
+    // 3. Change Text Content
+    document.getElementById("message").textContent = "DOM Tutorial";
+
+    // 4. Change Attribute
+    document.getElementById("link").setAttribute("href","https://www.youtube.com");
+
+    // 5. Read Attribute
+    console.log(document.getElementById("link").getAttribute("href"));
+
+    // 6. Change Input Value
+    document.getElementById("username").value = "John";
+
+}
+
+</script>
+
+</body>
+</html>

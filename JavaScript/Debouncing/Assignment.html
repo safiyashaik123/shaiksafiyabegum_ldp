@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Debounce & Throttle Search</title>
+</head>
+
+<body>
+
+    <h2>Search Bar with Debounce and Throttle</h2>
+
+    <input type="text" id="search" placeholder="Search here...">
+
+    <script>
+
+        // Search Function
+        function search(event) {
+            console.log("Searching for:", event.target.value);
+        }
+
+        // -------------------------
+        // Debounce Function
+        // -------------------------
+
+        function debounce(func, delay) {
+
+            let timer;
+
+            return function (...args) {
+
+                clearTimeout(timer);
+
+                timer = setTimeout(() => {
+
+                    func(...args);
+
+                }, delay);
+
+            };
+
+        }
+
+        // -------------------------
+        // Throttle Function
+        // -------------------------
+
+        function throttle(func, delay) {
+
+            let canRun = true;
+
+            return function (...args) {
+
+                if (!canRun)
+                    return;
+
+                func(...args);
+
+                canRun = false;
+
+                setTimeout(() => {
+
+                    canRun = true;
+
+                }, delay);
+
+            };
+
+        }
+
+        // Create Optimized Functions
+        const debounceSearch = debounce(search, 1000);
+
+        const throttleSearch = throttle(search, 1000);
+
+        // ===========================
+        // Choose ONE of these
+        // ===========================
+
+        // Debouncing
+        /*document
+            .getElementById("search")
+            .addEventListener("keyup", debounceSearch);
+            */
+
+        // Uncomment below and comment above
+        // to test Throttling
+
+    
+        document
+            .getElementById("search")
+            .addEventListener("keyup", throttleSearch);
+    
+
+    </script>
+
+</body>
+
+</html>
