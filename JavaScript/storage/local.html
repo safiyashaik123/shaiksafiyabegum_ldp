@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Storage Example</title>
+</head>
+<body>
+
+<h2>Local Storage Example</h2>
+
+<button onclick="save()">Save Data</button>
+<button onclick="show()">Show Data</button>
+<button onclick="removeData()">Remove Data</button>
+<button onclick="clearData()">Clear All</button>
+
+<script>
+
+function save(){
+
+
+    localStorage.setItem("name", "Safiya");
+    localStorage.setItem("city", "Mumbai");
+    localStorage.setItem("course", "JavaScript");
+
+
+    console.log("Data Saved Successfully");
+
+}
+
+function show(){
+
+    console.log("Stored Name :", localStorage.getItem("name"));
+
+}
+
+function removeData(){
+
+    localStorage.removeItem("name");
+
+    console.log("Name Removed");
+
+}
+
+function clearData(){
+
+    localStorage.clear();
+
+    console.log("All Data Cleared");
+
+} 
+
+
+</script>
+
+</body>
+</html>

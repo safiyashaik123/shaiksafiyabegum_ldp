@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON.stringify() and JSON.parse() Example</title>
+</head>
+<body>
+
+<h2>Open the Console (F12 → Console)</h2>
+
+<script> 
+
+    let student = {
+        name: "Safiya",
+        age: 22,
+        course: "JavaScript"
+    };
+
+    console.log("========== STEP 1 ==========");
+    console.log("Original JavaScript Object:");
+    console.log(student);
+    console.log("Type:", typeof student);
+
+    let jsonString = JSON.stringify(student);
+
+    console.log("\n========== STEP 2 ==========");
+    console.log("After JSON.stringify():");
+    console.log(jsonString);
+    console.log("Type:", typeof jsonString);
+
+   
+    localStorage.setItem("student", jsonString);
+
+    console.log("\n========== STEP 3 ==========");
+    console.log("Stored in localStorage Successfully");
+
+    
+    let retrievedString = localStorage.getItem("student");
+
+    console.log("\n========== STEP 4 ==========");
+    console.log("Retrieved from localStorage:");
+    console.log(retrievedString);
+    console.log("Type:", typeof retrievedString);
+
+   
+    let studentObject = JSON.parse(retrievedString);
+
+    console.log("\n========== STEP 5 ==========");
+    console.log("After JSON.parse():");
+    console.log(studentObject);
+    console.log("Type:", typeof studentObject);
+
+    console.log("\n========== STEP 6 ==========");
+    console.log("Name   :", studentObject.name);
+    console.log("Age    :", studentObject.age);
+    console.log("Course :", studentObject.course);
+ 
+ </script>
+
+</body>
+</html> 

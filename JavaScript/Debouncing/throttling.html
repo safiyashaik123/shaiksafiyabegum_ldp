@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Throttle Example</title>
+</head>
+<body>
+
+<h2>Throttle Example</h2>
+
+<button id="fire">Fire Gun</button>
+
+<script>
+
+function shoot() {
+    console.log("💥 Bang! Bullet Fired");
+}
+
+function throttle(func, delay) {
+
+    let canFire = true;
+
+    return function (...args) {
+
+        if (!canFire) {
+            console.log("❌ Gun Reloading...");
+            return;
+        }
+
+        func(...args);
+
+        canFire = false;
+
+        setTimeout(() => {
+            canFire = true;
+            console.log("✅ Gun Reloaded");
+        }, delay);
+
+    };
+
+}
+
+const optimizedShoot = throttle(shoot, 3000);
+
+document
+.getElementById("fire")
+.addEventListener("click", optimizedShoot);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debounce Example</title>
+</head>
+<body>
+
+<h2>Debounce Example</h2>
+
+<input type="text" id="search" placeholder="Search Product">
+
+<script>
+    function search(event) {
+    console.log("Searching:", event.target.value);
+}
+
+function debounce(func, delay) {
+
+    let timer;
+
+    return function (...args) {
+
+        clearTimeout(timer);
+
+        timer = setTimeout(() => {
+
+            func(...args);
+
+        }, delay);
+
+    };
+
+}
+
+const optimizedSearch = debounce(search, 3000);
+
+document
+.getElementById("search")
+.addEventListener("keyup", optimizedSearch);
+</script>
+
+</body>
+</html>
