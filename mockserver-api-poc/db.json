@@ -1,0 +1,85 @@
+{
+  "employees": [
+    {
+      "name": "ayesha",
+      "role": "react ",
+      "id": "A6OGaylyDtg"
+    },
+    {
+      "id": "z7b2VMGpScw",
+      "name": "varun",
+      "role": "frontend"
+    },
+    {
+      "name": "shammu",
+      "role": "data scientist",
+      "id": "kwsUVKnewKM"
+    },
+    {
+      "name": "john",
+      "role": "full stack",
+      "id": "AoEQkqBIwA8"
+    },
+    {
+      "name": "sana",
+      "role": "data analyst",
+      "id": "Y6okM2ESzZw"
+    },
+    {
+      "name": "Shaik",
+      "role": "Backend",
+      "id": "xTMdmuSGDxQ"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 16",
+      "category": "Mobile"
+    },
+    {
+      "id": "2",
+      "name": "Samsung S25",
+      "category": "Mobile"
+    },
+    {
+      "id": "3",
+      "name": "MacBook Air",
+      "category": "Laptop"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS",
+      "category": "Laptop"
+    },
+    {
+      "id": "5",
+      "name": "Boat Airdopes",
+      "category": "Earbuds"
+    },
+    {
+      "id": "6",
+      "name": "Sony WH-1000XM5",
+      "category": "Headphones"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "HR"
+    },
+    {
+      "id": "2",
+      "name": "Engineering"
+    },
+    {
+      "id": "3",
+      "name": "Finance"
+    },
+    {
+      "id": "4",
+      "name": "Marketing"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
