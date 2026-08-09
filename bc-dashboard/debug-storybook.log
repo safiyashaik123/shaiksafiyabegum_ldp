@@ -1,0 +1,31 @@
+[15:44:43.356] [INFO] storybook v10.5.3
+[15:44:43.624] [DEBUG] Command "yarn.cmd" not found, trying next variation...
+[15:44:43.700] [DEBUG] Command "yarn.exe" not found, trying next variation...
+[15:44:43.782] [DEBUG] Command "yarn.ps1" not found, trying next variation...
+[15:44:43.909] [DEBUG] Command "pnpm.cmd" not found, trying next variation...
+[15:44:43.967] [DEBUG] Command "pnpm.exe" not found, trying next variation...
+[15:44:44.026] [DEBUG] Command "pnpm.ps1" not found, trying next variation...
+[15:44:44.508] [DEBUG] Getting package.json info for C:/Users/Safiya Shaik/Downloads/bc-dashboard/package.json...
+[15:44:45.537] [DEBUG] Could not determine @babel/preset-env version in use. In case of runtime errors with @babel/preset-env, you may need to set the babelRemoveBugfixes feature flag in your `main.ts` file.
+[15:44:46.348] [INFO] Starting...
+[15:44:46.507] [DEBUG] Starting preview..
+[15:44:46.547] [INFO] Addon-docs: using MDX3
+[15:44:46.627] [INFO] Using implicit CSS loaders
+[15:44:46.644] [INFO] Using default Webpack5 setup
+[15:44:47.914] [DEBUG] Using tsconfig paths for react-docgen
+[15:44:49.972] [ERROR] Failed to build the preview
+[15:44:49.975] [WARN] Force closed preview build
+[15:44:49.979] [ERROR] [38;2;241;97;97mSB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
+Run Storybook with --debug-webpack for more information.[39m
+    at starter (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/@storybook/builder-webpack5/dist/index.js:857:11)
+    at starter.next (<anonymous>)
+    at Module.start (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/@storybook/builder-webpack5/dist/index.js:915:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async storybookDevServer (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/storybook/dist/core-server/index.js:11225:59)
+    at async buildOrThrow (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/storybook/dist/core-server/index.js:8331:12)
+    at async buildDevStandalone (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/storybook/dist/core-server/index.js:11990:41)
+    at async withTelemetry (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/storybook/dist/_node-chunks/chunk-YJQMIE5B.js:1785:12)
+    at async dev (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/storybook/dist/bin/core.js:3850:3)
+    at async _Command.<anonymous> (file:///C:/Users/Safiya%20Shaik/Downloads/bc-dashboard/node_modules/storybook/dist/bin/core.js:3958:3)
+[15:44:49.981] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
