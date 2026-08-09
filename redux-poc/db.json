@@ -1,0 +1,30 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Safiya",
+      "role": "tester"
+    },
+    {
+      "id": "2",
+      "name": "Rahul",
+      "role": "Backend Developer"
+    },
+    {
+      "id": "qnCG0QBubCA",
+      "name": "shammu",
+      "role": "Developer"
+    },
+    {
+      "id": "UsGdEsGqPVc",
+      "name": "Alex",
+      "role": "Data Scientist"
+    },
+    {
+      "name": "John",
+      "role": "React Developer",
+      "id": "LXkoBELb3Xw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
