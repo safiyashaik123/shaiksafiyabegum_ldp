@@ -1,0 +1,36 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 300px;
+}
+
+.input-label {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.required {
+  color: var(--danger);
+  margin-left: 4px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 16px;
+
+  background: var(--surface);
+  color: var(--text);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.input:disabled {
+  background: var(--disabled);
+  cursor: not-allowed;
+}

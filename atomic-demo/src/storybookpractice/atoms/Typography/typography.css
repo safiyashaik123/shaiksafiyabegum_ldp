@@ -1,0 +1,37 @@
+.typography {
+  margin: 0;
+}
+
+.h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.body {
+  font-size: 18px;
+}
+
+.caption {
+  font-size: 14px;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.success {
+  color: var(--success);
+}
+
+.danger {
+  color: var(--danger);
+}
