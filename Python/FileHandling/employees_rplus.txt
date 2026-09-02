@@ -1,0 +1,7 @@
+101, Safiya, Python, 50000
+102, Rahul, Java, 55000
+103, Priya, React, 60000
+103, Priya, React, 60000
+103, Priya, React, 60000
+103, Priya, React, 60000
+103, Priya, React, 60000

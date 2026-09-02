@@ -1,0 +1,5 @@
+COMPANY_NAME = "Zemoso Technologies"
+
+DEFAULT_DEPARTMENT = "Engineering"
+
+BONUS_PERCENTAGE = 10
